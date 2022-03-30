@@ -2,11 +2,10 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-
 driver=webdriver.Chrome(ChromeDriverManager().install())
 print("Test case Started")
 driver.maximize_window()
-driver.get("https://www.instagram.com")
+driver.get("https://www.facebook.com")
 time.sleep(60)
 driver.find_elements_by_name("username").send_keys("")
 driver.sleep(5)
